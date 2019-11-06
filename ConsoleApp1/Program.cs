@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace RomanNumeralConverter
+namespace ConsoleApp1
 {
     class Program
     {

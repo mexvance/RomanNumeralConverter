@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29318.209
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralConverter", "RomanNumeralConverter\RomanNumeralConverter.csproj", "{8CB09167-EAF0-44B9-964C-40179A899C5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RomanNumeralConverter", "RomanNumeralConverter\RomanNumeralConverter.csproj", "{8CB09167-EAF0-44B9-964C-40179A899C5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralConverterTest", "RomanNumeralConverterTest\RomanNumeralConverterTest.csproj", "{8416F25D-3959-4154-9C68-8066442AEC2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RomanNumeralConverterTest", "RomanNumeralConverterTest\RomanNumeralConverterTest.csproj", "{8416F25D-3959-4154-9C68-8066442AEC2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

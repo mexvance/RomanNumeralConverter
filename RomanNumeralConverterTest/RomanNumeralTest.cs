@@ -4,6 +4,7 @@ namespace RomanNumeralConverterTest
 {
     public class Tests
     {
+        RomanNumeralToTextConverter RomanNumeralConverter= new RomanNumeralToTextConverter();
         [SetUp]
         public void Setup()
         {
@@ -23,9 +24,20 @@ namespace RomanNumeralConverterTest
         [TestCase("C", 100)]
         [TestCase("D", 500)]
         [TestCase("M", 1000)]
-        public void EachRomanNumeralConvertsToCorrectInteger(string romanNumeral, int convertedValue)
+        public void SingleRomanNumeralConvertsToCorrectInteger(string romanNumeral, int convertedValue)
         {
-            int answer = 0;
+            var answer = RomanNumeralConverter.ConvertSingleRomanNumeralToNumber(romanNumeral);
+            Assert.AreEqual(convertedValue, answer);
+        }
+        [TestCase("IV", 4)]
+        [TestCase("IX", 9)]
+        [TestCase("XL", 40)]
+        [TestCase("XC", 90)]
+        [TestCase("CD", 400)]
+        [TestCase("CM", 900)]
+        public void RomanNumeralSubtractionTests(string romanNumeral, int convertedValue)
+        {
+            var answer = RomanNumeralConverter.ConvertMultiRomanNumeralToNumber(romanNumeral);
             Assert.AreEqual(convertedValue, answer);
         }
     }
